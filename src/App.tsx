@@ -1,10 +1,11 @@
 import './App.css'
+import Hero from './components/Hero'
 
 function App() {
 
   return (
     <>
-      <div className="text-lg">Hero</div>
+      <Hero />
     </>
   )
 }
