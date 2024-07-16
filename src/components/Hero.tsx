@@ -99,7 +99,7 @@ const Hero: React.FC = () => {
                         <div className="w-full flex md:flex-row flex-col justify-between items-center ">
                             <div>
                                 <p className=" text-white/60 font-Glimer-Light xl:text-[1.3rem] 2xl:text-[1.5rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0">
-                                "As a full-stack developer, I specialize in creating seamless and user-friendly web applications. I leverage advanced technologies like ReactJS and NodeJS to deliver robust, high-performance solutions, ensuring seamless functionality from front to back end."                                </p>
+                                "As a full-stack developer, I specialize in creating seamless and user-friendly web applications. I leverage advanced technologies like NextJS, ReactJS and NodeJS to deliver robust, high-performance solutions, ensuring seamless functionality from front to back end."                                </p>
                             </div>
                             <div>
                                 <Player
