@@ -134,8 +134,8 @@ const Projects: React.FC = () => {
 
                     <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
                         <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-                            <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden">
-                                <div className="content-line-inner text-white">Learning Cafe</div>
+                            <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#000] ">
+                                <div className="content-line-inner">Learning Cafe</div>
                             </div>
                         </h1>
                         <p className="font-normal cursor-default font-Glimer-Light text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl vvs:text-base text-sm lg:text-right">
@@ -147,7 +147,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon "
                                     target="_blank"
-                                    href="https://github.com/tarunfy/learningcafe"
+                                    href="#"
                                 >
                                     <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                                 </a>
@@ -156,7 +156,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon"
                                     target="_blank"
-                                    href="https://learningcafe.co.in/"
+                                    href="#"
                                 >
                                     <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                                 </a>
@@ -169,7 +169,7 @@ const Projects: React.FC = () => {
                 <div className="container lg:space-x-2  flex flex-col-reverse lg:flex-row lg:justify-between  lg:items-center items-start invisible ">
                     <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
                         <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-                            <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
+                            <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#000]">
                                 <div className="content-line-inner">Hirely</div>
                             </div>
                         </h1>
@@ -182,7 +182,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon "
                                     target="_blank"
-                                    href="https://github.com/tarunfy/Hirely"
+                                    href="#"
                                 >
                                     <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                                 </a>
@@ -191,7 +191,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon"
                                     target="_blank"
-                                    href="https://hirely.vercel.app/"
+                                    href="#"
                                 >
                                     <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                                 </a>
@@ -205,7 +205,7 @@ const Projects: React.FC = () => {
                             alt="project image"
                             className="absolute w-full object-cover h-full img"
                         />
-                        <div className="img-container absolute top-0 left-0 bg-[#420fe7] w-full h-full"></div>
+                        <div className="img-container absolute top-0 left-0 bg-[#000] w-full h-full"></div>
                     </div>
                 </div>
 
@@ -217,12 +217,12 @@ const Projects: React.FC = () => {
                             alt="project image"
                             className="absolute w-full object-cover h-full img"
                         />
-                        <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
+                        <div className="img-container absolute top-0 right-0 bg-[#000] w-full h-full"></div>
                     </div>
 
                     <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
                         <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-                            <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
+                            <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#000] ">
                                 <div className="content-line-inner">Formify</div>
                             </div>
                         </h1>
@@ -235,7 +235,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon "
                                     target="_blank"
-                                    href="https://github.com/tarunfy/formify"
+                                    href="#"
                                 >
                                     <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                                 </a>
@@ -244,7 +244,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon"
                                     target="_blank"
-                                    href="https://formifyy.vercel.app/"
+                                    href="#"
                                 >
                                     <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                                 </a>
@@ -257,7 +257,7 @@ const Projects: React.FC = () => {
                 <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
                     <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
                         <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-                            <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
+                            <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#000]">
                                 <div className="content-line-inner">Easy Staff</div>
                             </div>
                         </h1>
@@ -270,7 +270,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon "
                                     target="_blank"
-                                    href="https://github.com/tarunfy/EasyStaff"
+                                    href="#"
                                 >
                                     <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                                 </a>
@@ -279,7 +279,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon"
                                     target="_blank"
-                                    href="https://tankhava-book.vercel.app/"
+                                    href="#"
                                 >
                                     <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                                 </a>
@@ -293,7 +293,7 @@ const Projects: React.FC = () => {
                             alt="project image"
                             className="absolute w-full object-cover h-full img"
                         />
-                        <div className="img-container absolute top-0 left-0 bg-[#420fe7] w-full h-full"></div>
+                        <div className="img-container absolute top-0 left-0 bg-[#000] w-full h-full"></div>
                     </div>
                 </div>
 
@@ -305,12 +305,12 @@ const Projects: React.FC = () => {
                             alt="project image"
                             className="absolute w-full object-cover h-full img"
                         />
-                        <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
+                        <div className="img-container absolute top-0 right-0 bg-[#000] w-full h-full"></div>
                     </div>
 
                     <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
                         <h1 className="hidden-text cursor-default font-Glimer-Bold font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-                            <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
+                            <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#000] ">
                                 <div className="content-line-inner">Planit.io</div>
                             </div>
                         </h1>
@@ -323,7 +323,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon "
                                     target="_blank"
-                                    href="https://github.com/tarunfy/Planit.io"
+                                    href="#"
                                 >
                                     <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                                 </a>
@@ -332,7 +332,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon"
                                     target="_blank"
-                                    href="https://planitio.vercel.app/"
+                                    href="#"
                                 >
                                     <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                                 </a>
@@ -345,7 +345,7 @@ const Projects: React.FC = () => {
                 <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
                     <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
                         <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-                            <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
+                            <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#000]">
                                 <div className="content-line-inner">Bloggy</div>
                             </div>
                         </h1>
@@ -358,7 +358,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon "
                                     target="_blank"
-                                    href="https://github.com/tarunfy/Bloggy"
+                                    href="#"
                                 >
                                     <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                                 </a>
@@ -367,7 +367,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon"
                                     target="_blank"
-                                    href="https://bloggyy.vercel.app/"
+                                    href="#"
                                 >
                                     <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                                 </a>
@@ -381,7 +381,7 @@ const Projects: React.FC = () => {
                             alt="project image"
                             className="absolute w-full object-cover h-full img"
                         />
-                        <div className="img-container absolute top-0 left-0 bg-[#420fe7] w-full h-full"></div>
+                        <div className="img-container absolute top-0 left-0 bg-[#000] w-full h-full"></div>
                     </div>
                 </div>
             </div>

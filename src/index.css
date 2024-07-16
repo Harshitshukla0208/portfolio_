@@ -10,7 +10,6 @@
 @font-face {
   font-family: "Glimer-Bold";
   src: url(./assets/Gilmer-Font/Gilmer-Bold.woff2) format("woff2"),
-       url(./assets/Gilmer-Font/Gilmer-Bold.woff) format("woff");
 }
 
 @font-face {
@@ -70,7 +69,7 @@
     height: 100%;
     top: 0;
     right: 0;
-    background: #420fe7;
+    background: transparent;
   }
 }
 
@@ -91,6 +90,7 @@
   .css-ja5taz-MuiTooltip-tooltip {
   transform: translateY(-20px) !important;
 }
+
 
 /* Background with gradients and images */
 #tech-stack::before {
