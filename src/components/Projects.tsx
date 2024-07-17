@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
-import hirely from "../assets/images/Hirely.png";
-import easyStaff from "../assets/images/EasyStaff.png";
-import formify from "../assets/images/Formify.png";
 import bloggy from "../assets/images/Bloggy.png";
 import planitio from "../assets/images/Planitio.png";
-import learningCafe from "../assets/images/LearningCafe.png";
 import mvk_ui_web from "../assets/images/mvk-ui.png"
 import mvk_ui_npm from "../assets/images/mvk-npm.png"
+import codelogs from "../assets/images/codelogs.png"
+import codeamong from "../assets/images/codeamong.png"
 import { BsGithub, BsArrowRight } from "react-icons/bs";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -123,7 +121,7 @@ const Projects: React.FC = () => {
                 Featured Projects
             </h1>
             <div className="sm:space-y-40 space-y-32 xl:space-y-[35vh] z-30">
-                {/* LearningCafe */}
+                {/* mvk-ui-web */}
                 <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
                     <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
                         <img
@@ -169,7 +167,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Hirely */}
+                {/* mvk-ui-npm */}
                 <div className="container lg:space-x-2  flex flex-col-reverse lg:flex-row lg:justify-between  lg:items-center items-start invisible ">
                     <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
                         <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
@@ -213,13 +211,13 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Formify */}
+                {/* Codelogs */}
                 <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
                     <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
                         <img
-                            src={formify}
+                            src={codelogs}
                             alt="project image"
-                            className="absolute w-full object-cover h-full img"
+                            className="absolute w-full object-cover h-full rounded-xl img"
                         />
                         <div className="img-container absolute top-0 right-0 bg-[#000] w-full h-full"></div>
                     </div>
@@ -227,19 +225,18 @@ const Projects: React.FC = () => {
                     <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
                         <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
                             <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#000] ">
-                                <div className="content-line-inner">Formify</div>
+                                <div className="content-line-inner">Codelogs</div>
                             </div>
                         </h1>
-                        <p className="font-normal cursor-default font-Glimer-Light text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl vvs:text-base text-sm lg:text-right">
-                            The fastest and the easiest way to create forms and collect
-                            submissions on the internet.
+                        <p className="font-normal cursor-default font-Glimer-Light text-white/90 xl:text-xl sm:text-lg 2xl:text-2xl vvs:text-sm text-xs lg:text-right">
+                            A web application built with Vite and React.js that allows users to write and compile code snippets.
                         </p>
                         <div className="btn-row flex justify-start space-x-6 items-center lg:justify-end">
                             <div className="github-btn">
                                 <a
                                     className="icon "
                                     target="_blank"
-                                    href="#"
+                                    href="https://github.com/Harshitshukla0208/Codelogs"
                                 >
                                     <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                                 </a>
@@ -248,7 +245,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon"
                                     target="_blank"
-                                    href="#"
+                                    href="https://codelogs.vercel.app/"
                                 >
                                     <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                                 </a>
@@ -257,17 +254,16 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Easy Staff */}
+                {/* CodeAmong */}
                 <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
                     <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
                         <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
                             <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#000]">
-                                <div className="content-line-inner">Easy Staff</div>
+                                <div className="content-line-inner">CodeAmong</div>
                             </div>
                         </h1>
-                        <p className="font-normal cursor-default font-Glimer-Light text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl vvs:text-base text-sm">
-                            Easy Staff allows you to manage your staff's attendance, salary
-                            and payments in few clicks.
+                        <p className="font-normal cursor-default font-Glimer-Light text-white/90 xl:text-xl sm:text-lg 2xl:text-2xl vvs:text-sm text-xs">
+                            Code together effortlessly with a collaborative platform that includes built-in video calling.
                         </p>
                         <div className="btn-row flex justify-start space-x-6 items-center">
                             <div className="github-btn">
@@ -293,9 +289,9 @@ const Projects: React.FC = () => {
 
                     <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
                         <img
-                            src={easyStaff}
+                            src={codeamong}
                             alt="project image"
-                            className="absolute w-full object-cover h-full img"
+                            className="absolute w-full object-cover h-full rounded-xl img"
                         />
                         <div className="img-container absolute top-0 left-0 bg-[#000] w-full h-full"></div>
                     </div>
