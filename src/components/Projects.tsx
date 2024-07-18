@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import bloggy from "../assets/images/Bloggy.png";
-import planitio from "../assets/images/Planitio.png";
+// import bloggy from "../assets/images/Bloggy.png";
+// import planitio from "../assets/images/Planitio.png";
 import mvk_ui_web from "../assets/images/mvk-ui.png"
 import mvk_ui_npm from "../assets/images/mvk-npm.png"
 import codelogs from "../assets/images/codelogs.png"
@@ -270,7 +270,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon "
                                     target="_blank"
-                                    href="#"
+                                    href="https://github.com/Harshitshukla0208/CodeAmong-frontend"
                                 >
                                     <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                                 </a>
@@ -279,7 +279,7 @@ const Projects: React.FC = () => {
                                 <a
                                     className="icon"
                                     target="_blank"
-                                    href="#"
+                                    href="https://codeamong.vercel.app/"
                                 >
                                     <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                                 </a>
@@ -298,7 +298,7 @@ const Projects: React.FC = () => {
                 </div>
 
                 {/* Planitio */}
-                <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
+                {/* <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
                     <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
                         <img
                             src={planitio}
@@ -339,10 +339,10 @@ const Projects: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Bloggy */}
-                <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
+                {/* <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
                     <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
                         <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
                             <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#000]">
@@ -383,7 +383,7 @@ const Projects: React.FC = () => {
                         />
                         <div className="img-container absolute top-0 left-0 bg-[#000] w-full h-full"></div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
