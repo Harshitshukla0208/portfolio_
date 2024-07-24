@@ -7,10 +7,11 @@ import firebase from "../assets/images/firebase.svg";
 import mongo from "../assets/images/mongo.svg";
 import postman from "../assets/images/postman.svg";
 import node from "../assets/images/node.svg";
-import figma from "../assets/images/figma.svg";
+import typescript from "../assets/images/typescript.svg";
 import mui from "../assets/images/mui.svg";
 import js from "../assets/images/js.svg";
 import git from "../assets/images/git.svg";
+import mysql from "../assets/images/mysql.svg"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -145,6 +146,18 @@ const TechStack: React.FC = () => {
                             ease: "power4.inOut",
                         },
                         0.4
+                    )
+                    .from(
+                        container.children[10],
+                        {
+                            opacity: 0,
+                            rotation: 270,
+                            top: "-110vh",
+                            left: "-400px",
+                            duration: 2,
+                            ease: "power4.inOut",
+                        },
+                        0.4
                     );
                 const tl2 = gsap
                     .timeline({
@@ -192,30 +205,30 @@ const TechStack: React.FC = () => {
                 src={firebase}
                 alt="tech"
                 id="firebase-img"
-                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[880px] 2xl:bottom-[950px] 1xl:right-[690px] 1xl:bottom-[850px] 1/2xl:right-[680px] 1/2xl:bottom-[950px] xl:right-[680px] xl:bottom-[950px] lg:right-[480px] lg:bottom-[860px] md:right-[340px] md:bottom-[820px] sm:right-[340px] sm:bottom-[820px] vvs:right-[100px] vvs:bottom-[700px] right-[100px] bottom-[710px] opacity-1 rotate-[-50deg]"
-            />
-            <img
-                src={figma}
-                alt="tech"
-                id="figma-img"
-                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:left-[280px] 2xl:bottom-[540px] 1xl:left-[290px] 1xl:bottom-[480px] 1/2xl:left-[280px] 1/2xl:bottom-[450px] xl:left-[280px] xl:bottom-[480px] lg:left-[280px] lg:bottom-[420px] md:left-[240px] md:bottom-[420px] sm:left-[140px] sm:bottom-[420px] vvs:left-[40px] vvs:bottom-[400px] left-[40px] bottom-[400px] opacity-1 rotate-45"
-            />
-            <img
-                src={node}
-                alt="tech"
-                id="node-img"
-                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[380px] 2xl:top-[550px] 1xl:right-[390px] 1xl:top-[580px] 1/2xl:right-[380px] 1/2xl:top-[600px] xl:right-[380px] xl:top-[600px] lg:right-[320px] lg:top-[550px] md:right-[220px] md:top-[600px] sm:right-[250px] sm:top-[600px] vvs:right-[50px] vvs:top-[600px] right-[50px] top-[550px] opacity-1 rotate-[-300deg]"
-            />
-            <img
-                src={mongo}
-                alt="tech"
-                id="mongo-img"
-                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[620px] 2xl:top-[350px]  xl:right-[520px] xl:top-[350px] lg:right-[400px] lg:top-[250px] md:right-[280px] md:top-[300px] sm:right-[280px] sm:top-[300px] vvs:right-[80px] vvs:top-[200px] right-[80px] top-[220px] opacity-1 rotate-[-48deg]"
+                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[880px] 2xl:bottom-[950px] 1xl:right-[690px] 1xl:bottom-[850px] 1/2xl:right-[680px] 1/2xl:bottom-[950px] xl:right-[680px] xl:bottom-[950px] lg:right-[480px] lg:bottom-[860px] md:right-[340px] md:bottom-[820px] sm:right-[340px] sm:bottom-[820px] vvs:right-[100px] vvs:bottom-[700px] right-[100px] bottom-[660px] opacity-1 rotate-[-50deg]"
             />
             <img
                 src={postman}
                 alt="tech"
                 id="postman-img"
+                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:left-[280px] 2xl:bottom-[540px] 1xl:left-[290px] 1xl:bottom-[480px] 1/2xl:left-[280px] 1/2xl:bottom-[450px] xl:left-[280px] xl:bottom-[480px] lg:left-[280px] lg:bottom-[420px] md:left-[240px] md:bottom-[420px] sm:left-[140px] sm:bottom-[420px] vvs:left-[40px] vvs:bottom-[400px] left-[40px] bottom-[400px] opacity-1 rotate-45"
+            />
+            <img
+                src={mongo}
+                alt="tech"
+                id="mongo-img"
+                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[380px] 2xl:top-[550px] 1xl:right-[390px] 1xl:top-[580px] 1/2xl:right-[380px] 1/2xl:top-[600px] xl:right-[380px] xl:top-[600px] lg:right-[320px] lg:top-[550px] md:right-[220px] md:top-[600px] sm:right-[250px] sm:top-[600px] vvs:right-[50px] vvs:top-[600px] right-[50px] top-[550px] opacity-1 rotate-[-300deg]"
+            />
+            <img
+                src={typescript}
+                alt="tech"
+                id="typescript-img"
+                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[620px] 2xl:top-[350px]  xl:right-[520px] xl:top-[350px] lg:right-[400px] lg:top-[250px] md:right-[280px] md:top-[300px] sm:right-[280px] sm:top-[300px] vvs:right-[80px] vvs:top-[200px] right-[70px] top-[220px] opacity-1 rotate-[-48deg]"
+            />
+            <img
+                src={node}
+                alt="tech"
+                id="node-img"
                 className="tech 2xl:h-28 2xl:w-28 xl:w-24 xl:h-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[770px] 2xl:bottom-[480px] xl:right-[670px] xl:bottom-[400px] lg:right-[480px] lg:bottom-[340px] md:right-[560px] md:bottom-[530px] sm:right-[220px] sm:bottom-[530px] vvs:right-[130px] vvs:bottom-[390px] right-[130px] bottom-[390px] opacity-1 rotate-[48deg]"
             />
             <img
@@ -228,7 +241,22 @@ const TechStack: React.FC = () => {
                 src={git}
                 alt="tech"
                 id="css-img"
-                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute  2xl:top-[140px] 2xl:right-[620px] xl:top-[440px] xl:right-[320px] lg:top-[480px] lg:right-[210px] md:top-[480px] md:right-[210px] sm:top-[400px] sm:right-[140px] vvs:top-[220px] vvs:right-[240px] top-[220px] right-[240px] opacity-1 rotate-[18deg]"
+                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute  2xl:top-[140px] 2xl:right-[620px] xl:top-[440px] xl:right-[320px] lg:top-[480px] lg:right-[210px] md:top-[480px] md:right-[210px] sm:top-[400px] sm:right-[140px] vvs:top-[220px] vvs:right-[240px] top-[220px] right-[260px] opacity-1 rotate-[18deg]"
+            />
+            <img
+                src={mysql}
+                alt="tech"
+                id="css-img"
+                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24 lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute
+                2xl:top-[200px] 2xl:right-[500px]
+                xl:top-[300px] xl:right-[200px]
+                lg:top-[420px] lg:right-[180px]
+                md:top-[420px] md:right-[180px]
+                sm:top-[50px] sm:right-[50px]
+                vvs:top-[150px] vvs:right-[100px]
+                top-[190px] right-[170px]
+                opacity-1 rotate-[18deg]"
+
             />
 
             <h1
