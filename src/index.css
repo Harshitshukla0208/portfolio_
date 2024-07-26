@@ -100,7 +100,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: radial-gradient(hsla(0, 0%, 100%, 0), #4613e6 60%);
+  background-image: radial-gradient(hsla(0, 0%, 100%, 0), #000000 60%);
 }
 
 #tech-stack::after {
@@ -111,20 +111,21 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: radial-gradient(hsla(0, 0%, 100%, 0), #4613e6 96%);
+  background-image: radial-gradient(hsla(0, 0%, 100%, 0), #000000 96%);
 }
 
 /* Background image with responsive adjustments */
 #tech-stack {
-  background: url(./assets/images/lines.svg);
+  background: url(./assets/images/background.jpg), #000000;
   background-position: right;
   background-size: cover;
   background-repeat: repeat-x;
 }
 
+
 @media screen and (min-width: 1280px) {
   #tech-stack {
-    background: url(./assets/images/lines.svg);
+    background: url(./assets/images/background.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
