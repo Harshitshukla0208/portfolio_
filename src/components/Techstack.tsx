@@ -198,6 +198,7 @@ const TechStack: React.FC = () => {
                         },
                         0.4
                     );
+                    console.log(tl)
                 const tl2 = gsap
                     .timeline({
                         scrollTrigger: {
@@ -213,6 +214,7 @@ const TechStack: React.FC = () => {
                         ease: "power4.inOut",
                         duration: 1.4,
                     });
+                console.log(tl2)
             });
         }
     }, []);

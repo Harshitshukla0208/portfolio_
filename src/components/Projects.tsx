@@ -84,6 +84,8 @@ const Projects: React.FC = () => {
                         },
                         1.2
                     );
+                const x = tl
+                console.log(x)
             });
 
             const tl2 = gsap.timeline({
@@ -106,6 +108,8 @@ const Projects: React.FC = () => {
                         duration: 1.4,
                     }
                 );
+            const y = tl2;
+            console.log(y)
         });
     }, []);
 

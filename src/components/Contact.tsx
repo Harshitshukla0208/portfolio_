@@ -47,6 +47,8 @@ const Contact: React.FC = () => {
                     },
                     0.8
                 );
+            const x = tl;
+            console.log(x)
         });
     }, []);
 
