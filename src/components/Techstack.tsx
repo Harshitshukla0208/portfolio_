@@ -14,6 +14,7 @@ import git from "../assets/images/git.svg";
 import mysql from "../assets/images/mysql.svg"
 import cpp from "../assets/images/cpp.svg"
 import nextJS from "../assets/images/nextJS.svg"
+import socket from "../assets/images/socket.svg"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -184,6 +185,18 @@ const TechStack: React.FC = () => {
                             ease: "power4.inOut",
                         },
                         0.4
+                    )
+                    .from(
+                        container.children[13],
+                        {
+                            opacity: 0,
+                            rotation: 12,
+                            top: "-20px",
+                            right: "-10px",
+                            duration: 2,
+                            ease: "power4.inOut",
+                        },
+                        0.4
                     );
                 const tl2 = gsap
                     .timeline({
@@ -226,6 +239,12 @@ const TechStack: React.FC = () => {
                 alt="tech"
                 id="tailwind-img"
                 className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[460px] 2xl:left-[400px] 1xl:top-[400px] 1xl:left-[350px] 1/2xl:top-[400px] 1/2xl:left-[360px] xl:top-[420px] xl:left-[360px] lg:top-[360px] lg:left-[320px] md:top-[340px] md:left-[230px] sm:top-[440px] sm:left-[100px] vvs:top-[440px] vvs:left-[40px] top-[490px] left-[40px] opacity-1 rotate-[0]"
+            />
+            <img
+                src={socket}
+                alt="tech"
+                id="tailwind-img"
+                className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[460px] 2xl:left-[200px] 1xl:top-[400px] 1xl:left-[150px] 1/2xl:top-[400px] 1/2xl:left-[200px] xl:top-[420px] xl:left-[260px] lg:top-[360px] lg:left-[220px] md:top-[340px] md:left-[230px] sm:top-[440px] sm:left-[50px] vvs:top-[440px] vvs:left-[40px] top-[520px] left-[120px] opacity-1 rotate-[0]"
             />
             <img
                 src={js}
@@ -298,7 +317,7 @@ const TechStack: React.FC = () => {
             />
 
             <h1
-                className="2xl:text-[8rem] font-Glimer-Outlined font-semibold xl:text-[7rem] lg:text-[6rem] md:text-[5rem] sm:text-[4rem] vvs:text-[3rem] text-[2.5rem] cursor-default absolute text-center sm:bottom-[40px] xl:bottom-[40px] bottom-[100px] opacity-100 leading-normal text-white/60"
+                className="2xl:text-[8rem] font-Glimer-Outlined font-semibold xl:ml-16 xl:mr-16 xl:font-medium xl:text-[6rem] lg:ml-12 lg:mr-12 lg:font-medium lg:text-[6rem] md:text-[5rem] sm:text-[4rem] vvs:text-[3rem] text-[2.5rem] cursor-default absolute text-center sm:bottom-[40px] xl:bottom-[40px] bottom-[100px] opacity-100 leading-normal text-white/60"
                 id="techstack-title"
             >
                 Languages, Frameworks & Tools
