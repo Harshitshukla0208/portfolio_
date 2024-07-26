@@ -16,24 +16,24 @@ import cpp from "../assets/images/cpp.svg"
 import nextJS from "../assets/images/nextJS.svg"
 import socket from "../assets/images/socket.svg"
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const TechStack: React.FC = () => {
     useEffect(() => {
         const container = document.getElementById("tech-stack");
 
         if (container) {
-            gsap.delayedCall(1, () => {
+            gsap.delayedCall(0, () => {
                 const tl = gsap
                     .timeline({
-                        scrollTrigger: {
-                            trigger: container,
-                            start: "top top",
-                            end: "bottom top",
-                            toggleActions: "play none resume pause",
-                            scrub: true,
-                            pin: true,
-                        },
+
+                        trigger: container,
+                        start: "top top",
+                        end: "bottom top",
+                        toggleActions: "play none resume pause",
+                        scrub: true,
+                        pin: true,
+
                     })
                     .from(container.children[0], {
                         opacity: 0,
@@ -198,7 +198,7 @@ const TechStack: React.FC = () => {
                         },
                         0.4
                     );
-                    console.log(tl)
+                console.log(tl)
                 const tl2 = gsap
                     .timeline({
                         scrollTrigger: {
@@ -319,7 +319,7 @@ const TechStack: React.FC = () => {
             />
 
             <h1
-                className="2xl:text-[8rem] font-Glimer-Outlined font-semibold xl:ml-16 xl:mr-16 xl:font-medium xl:text-[6rem] lg:ml-12 lg:mr-12 lg:font-medium lg:text-[6rem] md:text-[5rem] sm:text-[4rem] vvs:text-[3rem] text-[2.5rem] cursor-default absolute text-center sm:bottom-[40px] xl:bottom-[40px] bottom-[100px] opacity-100 leading-normal text-white/60"
+                className="2xl:text-[8rem] font-Glimer-Outlined font-semibold xl:ml-48 xl:mr-18 xl:font-medium xl:text-[5rem] lg:ml-12 lg:mr-12 lg:font-medium lg:text-[6rem] md:text-[5rem] sm:text-[4rem] vvs:text-[3rem] text-[2.5rem] cursor-default absolute text-center sm:bottom-[40px] xl:bottom-[40px] bottom-[100px] opacity-100 leading-normal text-white/60"
                 id="techstack-title"
             >
                 Languages, Frameworks & Tools
