@@ -116,7 +116,7 @@ const Projects: React.FC = () => {
         >
             <h1
                 id="project-heading"
-                className="text-white/70 font-Glimer-Outlined font-semibold z-40 lg:mb-32 mb-20 vvs:text-[4rem] sm:text-[5.2rem] md:text-[6.0rem] lg:text-[7.0rem] xl:text-[9.0rem] 2xl:text-[10.0rem]  text-[3.0rem] leading-[3.0rem] sm:leading-[5.0rem] md:leading-[6rem] lg:leading-[7rem] xl:leading-[9rem] 2xl:leading-[10rem]  cursor-default"
+                className="text-white/70 font-Glimer-Outlined font-semibold z-40 lg:mb-32 mb-20 vvs:text-[4rem] sm:text-[5.2rem] md:text-[6.0rem] lg:text-[7.0rem] xl:font-medium xl:text-[6.0rem] 2xl:text-[10.0rem]  text-[3.0rem] leading-[3.0rem] sm:leading-[5.0rem] md:leading-[6rem] lg:leading-[7rem] xl:leading-[9rem] 2xl:leading-[10rem]  cursor-default"
             >
                 Featured Projects
             </h1>
