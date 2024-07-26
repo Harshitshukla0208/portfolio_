@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import bloggy from "../assets/images/Bloggy.png";
+// import bloggy from "../assets/images/Bloggy.png";
 // import planitio from "../assets/images/Planitio.png";
 import mvk_ui_web from "../assets/images/mvk-ui.png"
 import mvk_ui_npm from "../assets/images/mvk-npm.png"
