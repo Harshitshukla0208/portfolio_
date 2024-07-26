@@ -4,115 +4,145 @@ import gsap from "gsap";
 const CustomCursor: React.FC = () => {
     useEffect(() => {
         gsap.delayedCall(1, () => {
-            const bigBall = document.querySelector(".cursor__ball--big") as HTMLElement;
-            const socialIcons = document.querySelectorAll(".social");
-            const footerIcons = document.querySelectorAll(".social-icon");
-            const profilePhoto = document.getElementById("profilePhoto") as HTMLElement;
-            const links = document.querySelectorAll(".link");
-            const repoLinks = document.querySelectorAll(".repo");
-            const techIcons = document.querySelectorAll(".tech");
-            const downloadBtn = document.getElementById("download-btn") as HTMLElement;
+            const bigBall = document.querySelector(".cursor__ball--big") as HTMLElement | null;
+            const socialIcons = document.querySelectorAll<HTMLElement>(".social");
+            const footerIcons = document.querySelectorAll<HTMLElement>(".social-icon");
+            const profilePhoto = document.getElementById("profilePhoto") as HTMLElement | null;
+            const links = document.querySelectorAll<HTMLElement>(".link");
+            const repoLinks = document.querySelectorAll<HTMLElement>(".repo");
+            const techIcons = document.querySelectorAll<HTMLElement>(".tech");
+            const downloadBtn = document.getElementById("download-btn") as HTMLElement | null;
 
-            // Listeners
-            document.body.addEventListener("mousemove", onMouseMove);
+            if (bigBall) {
+                // Listeners
+                document.body.addEventListener("mousemove", onMouseMove);
 
-            socialIcons.forEach(icon => {
-                icon.addEventListener("mouseenter", onMouseHover);
-                icon.addEventListener("mouseleave", onMouseHoverOut);
-            });
+                socialIcons.forEach(icon => {
+                    icon.addEventListener("mouseenter", onMouseHover);
+                    icon.addEventListener("mouseleave", onMouseHoverOut);
+                });
 
-            footerIcons.forEach(icon => {
-                icon.addEventListener("mouseenter", linkMouseHover);
-                icon.addEventListener("mouseleave", onMouseHoverOut);
-            });
+                footerIcons.forEach(icon => {
+                    icon.addEventListener("mouseenter", linkMouseHover);
+                    icon.addEventListener("mouseleave", onMouseHoverOut);
+                });
 
-            links.forEach(link => {
-                link.addEventListener("mouseenter", linkMouseHover);
-                link.addEventListener("mouseleave", onMouseHoverOut);
-            });
+                links.forEach(link => {
+                    link.addEventListener("mouseenter", linkMouseHover);
+                    link.addEventListener("mouseleave", onMouseHoverOut);
+                });
 
-            repoLinks.forEach(repo => {
-                repo.addEventListener("mouseenter", linkMouseHover);
-                repo.addEventListener("mouseleave", onMouseHoverOut);
-            });
+                repoLinks.forEach(repo => {
+                    repo.addEventListener("mouseenter", linkMouseHover);
+                    repo.addEventListener("mouseleave", onMouseHoverOut);
+                });
 
-            techIcons.forEach(icon => {
-                icon.addEventListener("mouseenter", profileMouseHover);
-                icon.addEventListener("mouseleave", onMouseHoverOut);
-            });
+                techIcons.forEach(icon => {
+                    icon.addEventListener("mouseenter", profileMouseHover);
+                    icon.addEventListener("mouseleave", onMouseHoverOut);
+                });
 
-            profilePhoto.addEventListener("mouseenter", profileMouseHover);
-            profilePhoto.addEventListener("mouseleave", onMouseHoverOut);
+                profilePhoto?.addEventListener("mouseenter", profileMouseHover);
+                profilePhoto?.addEventListener("mouseleave", onMouseHoverOut);
 
-            downloadBtn.addEventListener("mouseenter", profileMouseHover);
-            downloadBtn.addEventListener("mouseleave", onMouseHoverOut);
+                downloadBtn?.addEventListener("mouseenter", profileMouseHover);
+                downloadBtn?.addEventListener("mouseleave", onMouseHoverOut);
+            }
 
             // Move the cursor
             function onMouseMove(e: MouseEvent) {
-                gsap.to(bigBall, {
-                    opacity: 1,
-                    duration: 0.4,
-                    x: e.clientX - 15,
-                    y: e.clientY - 15,
-                });
+                if (bigBall) {
+                    gsap.to(bigBall, {
+                        opacity: 1,
+                        duration: 0.4,
+                        x: e.clientX - 15,
+                        y: e.clientY - 15,
+                    });
+                }
             }
 
             // hover link:
             function linkMouseHover() {
-                gsap.to(bigBall, {
-                    duration: 0.3,
-                    scale: 1.4,
-                    ease: "Power3.easeInOut",
-                });
+                if (bigBall) {
+                    gsap.to(bigBall, {
+                        duration: 0.3,
+                        scale: 1.4,
+                        ease: "Power3.easeInOut",
+                    });
+                }
             }
 
             // Hover profile photo:
             function profileMouseHover() {
-                bigBall.style.display = "none";
+                if (bigBall) {
+                    bigBall.style.display = "none";
+                }
             }
 
             // Hover an element
             function onMouseHover(e: MouseEvent) {
-                bigBall.style.display = "none";
-                gsap.to(bigBall, {
-                    duration: 0.3,
-                    opacity: 0,
-                    ease: "Power2.easeInOut",
-                });
-                gsap.to((e.target as HTMLElement).querySelector(".icon-wrapper"), {
-                    duration: 0.3,
-                    scale: 1.1,
-                    ease: "Power3.easeInOut",
-                });
-                gsap.to((e.target as HTMLElement).querySelector("img"), {
-                    duration: 0.3,
-                    scale: 0.9,
-                    ease: "Power3.easeInOut",
-                });
+                if (bigBall) {
+                    bigBall.style.display = "none";
+                    gsap.to(bigBall, {
+                        duration: 0.3,
+                        opacity: 0,
+                        ease: "Power2.easeInOut",
+                    });
+
+                    const target = e.target as HTMLElement;
+                    const iconWrapper = target.querySelector(".icon-wrapper") as HTMLElement | null;
+                    const img = target.querySelector("img") as HTMLElement | null;
+
+                    if (iconWrapper) {
+                        gsap.to(iconWrapper, {
+                            duration: 0.3,
+                            scale: 1.1,
+                            ease: "Power3.easeInOut",
+                        });
+                    }
+                    if (img) {
+                        gsap.to(img, {
+                            duration: 0.3,
+                            scale: 0.9,
+                            ease: "Power3.easeInOut",
+                        });
+                    }
+                }
             }
 
             function onMouseHoverOut(e: MouseEvent) {
-                bigBall.style.display = "block";
-                gsap.to(bigBall, {
-                    duration: 0.3,
-                    opacity: 1,
-                    ease: "Power2.easeInOut",
-                });
-                gsap.to((e.target as HTMLElement).querySelector(".icon-wrapper"), {
-                    duration: 0.3,
-                    scale: 1,
-                    ease: "Power3.easeInOut",
-                });
-                gsap.to((e.target as HTMLElement).querySelector("img"), {
-                    duration: 0.3,
-                    scale: 1,
-                    ease: "Power3.easeInOut",
-                });
-                gsap.to(bigBall, {
-                    duration: 0.3,
-                    scale: 1,
-                    ease: "Power3.easeInOut",
-                });
+                if (bigBall) {
+                    bigBall.style.display = "block";
+                    gsap.to(bigBall, {
+                        duration: 0.3,
+                        opacity: 1,
+                        ease: "Power2.easeInOut",
+                    });
+
+                    const target = e.target as HTMLElement;
+                    const iconWrapper = target.querySelector(".icon-wrapper") as HTMLElement | null;
+                    const img = target.querySelector("img") as HTMLElement | null;
+
+                    if (iconWrapper) {
+                        gsap.to(iconWrapper, {
+                            duration: 0.3,
+                            scale: 1,
+                            ease: "Power3.easeInOut",
+                        });
+                    }
+                    if (img) {
+                        gsap.to(img, {
+                            duration: 0.3,
+                            scale: 1,
+                            ease: "Power3.easeInOut",
+                        });
+                    }
+                    gsap.to(bigBall, {
+                        duration: 0.3,
+                        scale: 1,
+                        ease: "Power3.easeInOut",
+                    });
+                }
             }
         });
     }, []);
