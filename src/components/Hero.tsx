@@ -83,11 +83,11 @@ const Hero: React.FC = () => {
 
                 <div>
                     <div className="mt-10 mb-8">
-                    <h1 className="text-white/70 font-Glimer-Outlined font-medium !z-10 2xl:text-[6rem] xl:text-[5.8rem] lg:text-[4.5rem] md:text-[3rem] sm:text-[2.5rem] vvs:text-[2rem] text-[1.8rem] tracking-normal xl:leading-[100px] md:leading-[80px] lg:leading-[90px] sm:leading-[70px] vvs:leading-[50px] leading-[40px]">
+                    <h1 className="text-white/70 font-Glimer-Outlined font-medium !z-10 2xl:text-[5.8rem] xl:text-[5.8rem] lg:text-[5.8rem] md:text-[3rem] sm:text-[2.5rem] vvs:text-[2rem] text-[1.8rem] tracking-normal xl:leading-[100px] md:leading-[80px] lg:leading-[90px] sm:leading-[70px] vvs:leading-[50px] leading-[40px]">
                         <AnimatedLetters letters={title} />
                     </h1>
 
-                    <h2 className="text-white !z-10 font-Glimer-Bold font-bold 2xl:text-[5rem] xl:text-[4.5rem] lg:text-[3rem] md:text-[2.2rem] sm:text-[1.8rem] vvs:text-[1.3rem] text-[1.2rem] tracking-normal 2xl:leading-[100px] lg:leading-[80px] md:leading-[60px] sm:leading-[40px] leading-[30px]">
+                    <h2 className="text-white !z-10 font-Glimer-Bold font-bold 2xl:text-[4.5rem] xl:text-[4.5rem] lg:text-[3rem] md:text-[2.2rem] sm:text-[1.8rem] vvs:text-[1.3rem] text-[1.2rem] tracking-normal 2xl:leading-[100px] lg:leading-[80px] md:leading-[60px] sm:leading-[40px] leading-[30px]">
                         <AnimatedLetters letters={letters} />
                     </h2>
                     </div>
@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
                     >
                         <div className="w-full flex md:flex-row flex-col justify-between items-center ">
                             <div>
-                                <p className=" text-white/60 font-Glimer-Light xl:text-[1.3rem] 2xl:text-[1.5rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0">
+                                <p className=" text-white/60 font-Glimer-Light xl:text-[1.3rem] 2xl:text-[1.3rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0">
                                 "As a full-stack developer, I specialize in creating seamless and user-friendly web applications. I leverage advanced technologies like NextJS, ReactJS and NodeJS to deliver robust, high-performance solutions, ensuring seamless functionality from front to back end."                                </p>
                             </div>
                             <div>
