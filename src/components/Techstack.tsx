@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import react from "../assets/images/react.svg";
 import tailwind from "../assets/images/tailwind.svg";
 import firebase from "../assets/images/firebase.svg";
