@@ -69,7 +69,7 @@ const allSkills: Skill[] = [
 
 const Techstack: React.FC = () => {
     const renderSkills = (skills: Skill[]) =>
-        skills.map((skill) => (
+        skills.map((skill, index) => (
             <motion.div
                 key={skill.id}
                 initial={{ scale: 0.3, opacity: 0 }}
@@ -99,7 +99,7 @@ const Techstack: React.FC = () => {
                         damping: 20,
                     },
                 }}
-                className="flex flex-wrap justify-center gap-6 cursor-pointer"
+                className={`flex justify-center cursor-pointer ${index === allSkills.length - 1 ? 'col-span-2 justify-center' : ''}`}
             >
                 <div className="relative">
                     <span className="absolute top-0 left-0 mt-[5px] ml-[5px] h-full rounded bg-[grey] w-[110px] sm:w-[150px] md:w-[160px]"></span>
@@ -177,7 +177,7 @@ const Techstack: React.FC = () => {
                     {renderSkills(tools_2)}
                 </div>
             </div>
-            <div className="md:hidden flex justify-center gap-10 mt-10 flex-wrap">
+            <div className="md:hidden grid grid-cols-2 gap-6 mt-10">
                 {renderSkills(allSkills)}
             </div>
         </div>
