@@ -8,8 +8,47 @@ import codeamong from "../assets/images/codeamong.png"
 import { BsGithub, BsArrowRight, BsYoutube } from "react-icons/bs";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import styled from 'styled-components';
 
 gsap.registerPlugin(ScrollTrigger);
+
+const ProjectHeading = styled.h1`
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    z-index: 40;
+    margin-bottom: 50px;
+    cursor: default;
+    font-size: calc(3rem + 1vw);
+    line-height: calc(3rem + 1vw);
+
+
+    @media (min-width: 640px) {
+        font-size: 5.2rem;
+        line-height: 5rem;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+
+    @media (min-width: 1024px) {
+        margin-bottom: 32px;
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    @media (min-width: 1280px) {
+        font-weight: 500;
+        font-size: 6rem;
+        line-height: 9rem;
+    }
+
+    @media (min-width: 1536px) {
+        font-size: 6rem;
+        line-height: 10rem;
+    }
+`;
 
 const Projects: React.FC = () => {
     useEffect(() => {
@@ -118,12 +157,9 @@ const Projects: React.FC = () => {
             className="w-full  pb-40 xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10"
             id="projects"
         >
-            <h1
-                id="project-heading"
-                className="text-white/70 font-Glimer-Outlined font-semibold z-40 lg:mb-32 mb-20 vvs:text-[4rem] sm:text-[5.2rem] md:text-[6.0rem] lg:text-[6.0rem] xl:font-medium xl:text-[6.0rem] 2xl:text-[6.0rem]  text-[3.0rem] leading-[3.0rem] sm:leading-[5.0rem] md:leading-[6rem] lg:leading-[7rem] xl:leading-[9rem] 2xl:leading-[10rem]  cursor-default"
-            >
+            <ProjectHeading id="project-heading">
                 Featured Projects
-            </h1>
+            </ProjectHeading>
             <div className="sm:space-y-40 space-y-32 xl:space-y-[35vh] z-30">
                 {/* mvk-ui-web */}
                 <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
