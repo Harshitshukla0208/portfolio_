@@ -159,8 +159,8 @@ const CustomCursor: React.FC = () => {
             >
                 <path
                     d="M53.5 26C53.5 40.0656 41.6535 51.5 27 51.5C12.3465 51.5 0.5 40.0656 0.5 26C0.5 11.9344 12.3465 0.5 27 0.5C41.6535 0.5 53.5 11.9344 53.5 26Z"
-                    stroke="#EEA1BE"
-                    strokeWidth={1.1}
+                    stroke="#fff"
+                    strokeWidth={2}
                 />
             </svg>
         </div>

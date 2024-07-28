@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
 import react from "../assets/images/react.svg";
 import tailwind from "../assets/images/tailwind.svg";
 import firebase from "../assets/images/firebase.svg";
@@ -11,321 +9,170 @@ import typescript from "../assets/images/typescript.svg";
 import mui from "../assets/images/mui.svg";
 import js from "../assets/images/js.svg";
 import git from "../assets/images/git.svg";
-import mysql from "../assets/images/mysql.svg"
-import cpp from "../assets/images/cpp.svg"
-import nextJS from "../assets/images/nextJS.svg"
-import socket from "../assets/images/socket.svg"
+import mysql from "../assets/images/mysql.svg";
+import cpp from "../assets/images/cpp.svg";
+import nextJS from "../assets/images/nextJS.svg";
+import socket from "../assets/images/socket.svg";
+import webrtc from "../assets/images/webrtc.svg";
+import vscode from "../assets/images/vs.svg";
+import ex from "../assets/images/ex.svg";
 
-gsap.registerPlugin(ScrollTrigger);
+type Skill = {
+    id: number;
+    name: string;
+    icon: string;
+};
 
-const TechStack: React.FC = () => {
-    useEffect(() => {
-        const container = document.getElementById("tech-stack");
+const fronendskills: Skill[] = [
+    { id: 1, name: "NextJs", icon: nextJS },
+    { id: 2, name: "ReactJs", icon: react },
+    { id: 3, name: "Typescript", icon: typescript },
+    { id: 4, name: "Javascript", icon: js },
+];
 
-        if (container) {
-            gsap.delayedCall(1, () => {
-                const tl = gsap
-                    .timeline({
-                        scrollTrigger: {
-                            trigger: container,
-                            start: "top top",
-                            end: "bottom top",
-                            toggleActions: "play none resume pause",
-                            scrub: 1,
-                            pin: true,
-                        },
-                    })
-                    .from(container.children[0], {
-                        opacity: 0,
-                        rotation: 270,
-                        top: "-110vh",
-                        left: "-400px",
-                        duration: 2,
-                        ease: "power4.inOut",
-                    })
-                    .from(
-                        container.children[1],
-                        {
-                            opacity: 0,
-                            rotation: 210,
-                            top: "-60vh",
-                            left: "-350px",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[2],
-                        {
-                            opacity: 0,
-                            rotation: 175,
-                            top: "60vh",
-                            right: "-110vw",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[3],
-                        {
-                            opacity: 0,
-                            rotation: 286,
-                            bottom: "100px",
-                            right: "-40px",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[4],
-                        {
-                            opacity: 0,
-                            rotation: 180,
-                            bottom: "-100px",
-                            left: "-40px",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[5],
-                        {
-                            opacity: 0,
-                            rotation: 45,
-                            top: "-100px",
-                            right: "-40px",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[6],
-                        {
-                            opacity: 0,
-                            rotation: 12,
-                            top: "-20px",
-                            right: "-10px",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[7],
-                        {
-                            opacity: 0,
-                            rotation: 55,
-                            bottom: "-60px",
-                            right: "-20px",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[8],
-                        {
-                            opacity: 0,
-                            rotation: 180,
-                            top: "-200px",
-                            right: "-60px",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[9],
-                        {
-                            opacity: 0,
-                            rotation: 155,
-                            top: -50,
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[10],
-                        {
-                            opacity: 0,
-                            rotation: 270,
-                            top: "-110vh",
-                            left: "-400px",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[11],
-                        {
-                            opacity: 0,
-                            rotation: 180,
-                            bottom: "-100px",
-                            left: "-40px",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[12],
-                        {
-                            opacity: 0,
-                            rotation: 175,
-                            top: "60vh",
-                            right: "-110vw",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    )
-                    .from(
-                        container.children[13],
-                        {
-                            opacity: 0,
-                            rotation: 12,
-                            top: "-20px",
-                            right: "-10px",
-                            duration: 2,
-                            ease: "power4.inOut",
-                        },
-                        0.4
-                    );
-                    console.log(tl)
-                const tl2 = gsap
-                    .timeline({
-                        scrollTrigger: {
-                            trigger: container,
-                            start: "80% 78%",
-                            end: "bottom 70%",
-                            toggleActions: "play none resume pause",
-                        },
-                    })
-                    .from("#techstack-title", {
-                        bottom: "-40px",
-                        opacity: 0,
-                        ease: "power4.inOut",
-                        duration: 1.4,
-                    });
-                    console.log(tl2)
-            });
-        }
-    }, []);
+const backendSkills: Skill[] = [
+    { id: 0, name: "TailwindCss", icon: tailwind },
+    { id: 1, name: "NodeJs", icon: node },
+    { id: 2, name: "ExpressJs", icon: ex },
+    { id: 3, name: "C++", icon: cpp },
+];
+
+const databases: Skill[] = [
+    { id: 0, name: "MongoDB", icon: mongo },
+    { id: 1, name: "MySql", icon: mysql },
+    { id: 2, name: "Firebase", icon: firebase },
+];
+
+const advanced: Skill[] = [
+    { id: 0, name: "WebRTC", icon: webrtc },
+    { id: 1, name: "Socket.io", icon: socket },
+    { id: 2, name: "Material ui", icon: mui },
+];
+
+const tools: Skill[] = [
+    { id: 0, name: "VsCode", icon: vscode },
+    { id: 1, name: "Postman", icon: postman },
+];
+
+const tools_2: Skill[] = [
+    { id: 0, name: "Git", icon: git },
+];
+
+const tools_3: Skill[] = [];
+
+const Techstack: React.FC = () => {
+    const renderSkills = (skills: Skill[]) =>
+        skills.map((skill) => (
+            <motion.div
+                key={skill.id}
+                initial={{ scale: 0.3, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                whileHover={{
+                    scale: 1.1,
+                    transition: {
+                        duration: 0.2,
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                    },
+                }}
+                transition={{
+                    duration: 1,
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,
+                    delay: 0.2,
+                }}
+                whileTap={{
+                    scale: 0.9,
+                    transition: {
+                        duration: 0.2,
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                    },
+                }}
+                className="flex flex-wrap justify-center gap-6 cursor-pointer"
+            >
+                <div className="relative ">
+                    <span className="absolute top-0 left-0 mt-[5px] ml-[5px] h-full rounded bg-[grey] w-[110px] sm:w-[150px] md:w-[160px]"></span>
+                    <span
+                        className={`relative h-full rounded border-t-[1px] border-l-[1px] border-[#374151] bg-[#1e1e2e] px-2 sm:px-4 py-2 sm:py-3 text-sm sm:text-md text-white transition duration-100 flex items-center gap-2 justify-center w-[110px] sm:w-[150px] md:w-[160px] truncate`}
+                    >
+                        <img
+                            src={skill.icon}
+                            width={25}
+                            height={25}
+                            alt={skill.name}
+                        />
+                        {skill.name}
+                    </span>
+                </div>
+            </motion.div>
+        ));
 
     return (
-        <div
-            id="tech-stack"
-            className="h-[calc(100vh_+_20rem)] w-full  relative overflow-hidden"
-        >
-            <img
-                src={react}
-                alt="tech"
-                id="react-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24 lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[240px] 2xl:left-[300px]  1xl:top-[240px] 1xl:left-[300px] 1/2xl:top-[220px] 1/2xl:left-[300px]   xl:top-[240px] xl:left-[300px] lg:top-[200px] lg:left-[290px] md:top-[200px] md:left-[200px] sm:top-[300px] sm:left-[180px] vvs:top-[300px] vvs:left-[120px] top-[300px] left-[120px]  opacity-1 rotate-[0]"
-            />
-            <img
-                src={cpp}
-                alt="tech"
-                id="cpp-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24 lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[190px] 2xl:left-[530px] 1xl:top-[190px] 1xl:left-[530px] 1/2xl:top-[170px] 1/2xl:left-[150px] xl:top-[190px] xl:left-[530px] lg:top-[50px] lg:left-[40px] md:top-[150px] md:left-[150px] sm:top-[250px] sm:left-[130px] vvs:top-[250px] vvs:left-[70px] top-[420px] left-[20px] opacity-1 rotate-[0]"
-            />
-            <img
-                src={tailwind}
-                alt="tech"
-                id="tailwind-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[400px] 2xl:left-[350px] 1xl:top-[400px] 1xl:left-[350px] 1/2xl:top-[400px] 1/2xl:left-[360px] xl:top-[400px] xl:left-[350px] lg:top-[360px] lg:left-[320px] md:top-[340px] md:left-[230px] sm:top-[440px] sm:left-[100px] vvs:top-[440px] vvs:left-[40px] top-[490px] left-[40px] opacity-1 rotate-[0]"
-            />
-            <img
-                src={socket}
-                alt="tech"
-                id="tailwind-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[400px] 2xl:left-[150px] 1xl:top-[400px] 1xl:left-[150px] 1/2xl:top-[400px] 1/2xl:left-[200px] xl:top-[400px] xl:left-[150px] lg:top-[360px] lg:left-[220px] md:top-[340px] md:left-[230px] sm:top-[440px] sm:left-[50px] vvs:top-[440px] vvs:left-[40px] top-[520px] left-[120px] opacity-1 rotate-[0]"
-            />
-            <img
-                src={js}
-                alt="tech"
-                id="js-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[400px] 2xl:right-[750px] 1xl:top-[400px] 1xl:right-[750px] 1/2xl:top-[270px] 1/2xl:right-[680px] xl:top-[400px] xl:right-[750px] lg:top-[410px] lg:right-[450px] md:top-[450px] md:right-[350px] sm:top-[450px] sm:right-[350px] vvs:top-[490px] vvs:right-[150px] top-[430px] right-[150px] opacity-1 rotate-[0]"
-            />
-            <img
-                src={firebase}
-                alt="tech"
-                id="firebase-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[690px] 2xl:bottom-[850px] 1xl:right-[690px] 1xl:bottom-[850px] 1/2xl:right-[680px] 1/2xl:bottom-[950px] xl:right-[690px] xl:bottom-[850px] lg:right-[480px] lg:bottom-[860px] md:right-[340px] md:bottom-[820px] sm:right-[340px] sm:bottom-[820px] vvs:right-[100px] vvs:bottom-[700px] right-[100px] bottom-[660px] opacity-1 rotate-[0]"
-            />
-            <img
-                src={postman}
-                alt="tech"
-                id="postman-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:left-[290px] 2xl:bottom-[480px] 1xl:left-[290px] 1xl:bottom-[480px] 1/2xl:left-[280px] 1/2xl:bottom-[450px] xl:left-[290px] xl:bottom-[480px] lg:left-[280px] lg:bottom-[420px] md:left-[240px] md:bottom-[420px] sm:left-[140px] sm:bottom-[420px] vvs:left-[40px] vvs:bottom-[400px] left-[40px] bottom-[400px] opacity-1 rotate-0"
-            />
-            <img
-                src={nextJS}
-                alt="tech"
-                id="nextjs-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:left-[520px] 2xl:bottom-[430px] 1xl:left-[520px] 1xl:bottom-[430px] 1/2xl:left-[280px] 1/2xl:bottom-[450px] xl:left-[520px] xl:bottom-[430px] lg:left-[280px] lg:bottom-[420px] md:left-[240px] md:bottom-[420px] sm:left-[140px] sm:bottom-[420px] vvs:left-[40px] vvs:bottom-[400px] left-[40px] bottom-[670px] opacity-1 rotate-0"
-            />
-            <img
-                src={mongo}
-                alt="tech"
-                id="mongo-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[390px] 2xl:top-[580px] 1xl:right-[390px] 1xl:top-[580px] 1/2xl:right-[380px] 1/2xl:top-[600px] xl:right-[390px] xl:top-[580px] lg:right-[320px] lg:top-[550px] md:right-[220px] md:top-[600px] sm:right-[250px] sm:top-[600px] vvs:right-[50px] vvs:top-[600px] right-[50px] top-[550px] opacity-1 rotate-[0]"
-            />
-            <img
-                src={typescript}
-                alt="tech"
-                id="typescript-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[520px] 2xl:top-[350px]  xl:right-[520px] xl:top-[350px] lg:right-[400px] lg:top-[250px] md:right-[280px] md:top-[300px] sm:right-[280px] sm:top-[300px] vvs:right-[80px] vvs:top-[200px] right-[70px] top-[220px] opacity-1 rotate-[0]"
-            />
-            <img
-                src={node}
-                alt="tech"
-                id="node-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:w-24 xl:h-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[670px] 2xl:bottom-[400px] xl:right-[670px] xl:bottom-[400px] lg:right-[480px] lg:bottom-[340px] md:right-[560px] md:bottom-[530px] sm:right-[220px] sm:bottom-[530px] vvs:right-[130px] vvs:bottom-[390px] right-[130px] bottom-[390px] opacity-1 rotate-[0]"
-            />
-            <img
-                src={mui}
-                alt="tech"
-                id="next-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[420px] 2xl:top-[240px] xl:right-[420px] xl:top-[240px] lg:right-[320px] lg:top-[360px] md:right-[250px] md:top-[400px] sm:right-[250px] sm:top-[380px] vvs:right-[55px] vvs:top-[300px] right-[40px] top-[420px] opacity-1 rotate-[0]"
-            />
-            <img
-                src={git}
-                alt="tech"
-                id="css-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute  2xl:top-[440px] 2xl:right-[320px] xl:top-[440px] xl:right-[320px] lg:top-[480px] lg:right-[210px] md:top-[480px] md:right-[210px] sm:top-[400px] sm:right-[140px] vvs:top-[220px] vvs:right-[240px] top-[220px] right-[260px] opacity-1 rotate-[0]"
-            />
-            <img
-                src={mysql}
-                alt="tech"
-                id="css-img"
-                className="tech 2xl:h-24 2xl:w-24 xl:h-24 xl:w-24 lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute
-                2xl:top-[300px] 2xl:right-[200px]
-                xl:top-[300px] xl:right-[200px]
-                lg:top-[420px] lg:right-[180px]
-                md:top-[420px] md:right-[180px]
-                sm:top-[50px] sm:right-[50px]
-                vvs:top-[150px] vvs:right-[100px]
-                top-[190px] right-[170px]
-                opacity-1 rotate-[0]"
-
-            />
-
-            <h1
-                className="2xl:text-[5rem] 2xl:ml-48 2xl:mr-48 2xl:font-medium font-Glimer-Outlined font-semibold xl:font-medium xl:text-[5rem] xl:ml-48 xl:mr-48 lg:font-medium lg:ml-48 lg:mr-48 lg:text-[6rem] md:text-[5rem] sm:text-[4rem] vvs:text-[3rem] text-[2.5rem] cursor-default absolute text-center sm:bottom-[40px] xl:bottom-[40px] bottom-[100px] opacity-100 leading-normal text-white/60 overflow-hidden"
-                id="techstack-title"
-            >
-                Languages, Frameworks & Tools
-            </h1>
+        <div className="flex justify-center flex-col">
+            <div className="flex items-center justify-center">
+                <motion.span
+                    initial={{ scale: 0.8, x: -100, opacity: 0 }}
+                    whileInView={{ scale: 1, x: 0, opacity: 1 }}
+                    transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                    }}
+                    className=" text-3xl md:text-4xl font-bold"
+                >{`<`}</motion.span>
+                <motion.span
+                    initial={{ scale: 0.4, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                    }}
+                    className="text-4xl md:text-6xl text-white font-Glimer-Outlined font-semibold"
+                >
+                    Tech Stack
+                </motion.span>
+                <motion.span
+                    initial={{ scale: 0.8, x: 100, opacity: 0 }}
+                    whileInView={{ scale: 1, x: 0, opacity: 1 }}
+                    transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                    }}
+                    className=" text-3xl md:text-4xl font-bold"
+                >{`/>`}</motion.span>
+            </div>
+            <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                {renderSkills(fronendskills)}
+            </div>
+            <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                {renderSkills(backendSkills)}
+            </div>
+            <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                {renderSkills(databases)}
+            </div>
+            <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                {renderSkills(advanced)}
+            </div>
+            <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                {renderSkills(tools)}
+            </div>
+            <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                {renderSkills(tools_2)}
+            </div>
+            <div className="flex justify-center gap-10 mt-10">
+                {renderSkills(tools_3)}
+            </div>
         </div>
     );
 };
 
-export default TechStack;
+export default Techstack;

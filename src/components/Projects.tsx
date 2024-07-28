@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
                     .to(
                         imgContainer,
                         {
-                            duration: 1.6,
+                            duration: 0.5,
                             width: "0%",
                             ease: "power4.out",
                         },
@@ -49,8 +49,8 @@ const Projects: React.FC = () => {
                     .from(
                         img,
                         {
-                            duration: 1.6,
-                            scale: 1.6,
+                            duration: 0.5,
+                            scale: 0.5,
                             ease: "power4.out",
                         },
                         0.2
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
                     .from(
                         contentLine.firstChild,
                         {
-                            duration: 1,
+                            duration: 0.5,
                             y: "54px",
                             ease: "power4.inOut",
                         },
@@ -67,7 +67,7 @@ const Projects: React.FC = () => {
                     .from(
                         contentP,
                         {
-                            duration: 1,
+                            duration: 0.5,
                             y: 20,
                             opacity: 0,
                             ease: "power4.inOut",
@@ -77,7 +77,7 @@ const Projects: React.FC = () => {
                     .from(
                         contentBtn,
                         {
-                            duration: 1,
+                            duration: 0.5,
                             y: 20,
                             opacity: 0,
                             ease: "power4.inOut",
