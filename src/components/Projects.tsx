@@ -5,7 +5,7 @@ import mvk_ui_web from "../assets/images/mvk-ui.png"
 import mvk_ui_npm from "../assets/images/mvk-npm.png"
 import codelogs from "../assets/images/codelogs.png"
 import codeamong from "../assets/images/codeamong.png"
-import { BsGithub, BsArrowRight } from "react-icons/bs";
+import { BsGithub, BsArrowRight, BsYoutube } from "react-icons/bs";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -143,9 +143,9 @@ const Projects: React.FC = () => {
                             </div>
                         </h1>
                         <p className="font-normal cursor-default font-Glimer-Light text-white/90 xl:text-xl sm:text-lg 2xl:text-xl vvs:text-sm text-xs lg:text-right">
-                            A component library website built with Next.js and Tailwind CSS, 
+                            A component library website built with Next.js and Tailwind CSS,
                             showcasing live components and their code,
-                            which you can copy and paste into your apps.                        
+                            which you can copy and paste into your apps.
                         </p>
 
                         <div className="btn-row flex justify-start space-x-6 items-center lg:justify-end">
@@ -272,11 +272,20 @@ const Projects: React.FC = () => {
                         <div className="btn-row flex justify-start space-x-6 items-center">
                             <div className="github-btn">
                                 <a
-                                    className="icon "
+                                    className="icon"
                                     target="_blank"
                                     href="https://github.com/Harshitshukla0208/CodeAmong-frontend"
                                 >
-                                    <BsGithub className="lg:h-8 lg:w-8 2xl:h-8 2xl:w-8 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
+                                    <BsGithub className="lg:h-8 lg:w-8 2xl:h-8 2xl:w-8 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200 ease-in-out repo text-white/90 hover:text-white" />
+                                </a>
+                            </div>
+                            <div className="youtube-btn">
+                                <a
+                                    className="icon"
+                                    target="_blank"
+                                    href="https://www.youtube.com/watch?v=1h2T216MTmI&ab_channel=HarshitShukla"
+                                >
+                                    <BsYoutube className="lg:h-8 lg:w-8 2xl:h-8 2xl:w-8 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:text-red-600 transition duration-200 ease-in-out text-white/90" />
                                 </a>
                             </div>
                             <div className="liveDemo-btn">

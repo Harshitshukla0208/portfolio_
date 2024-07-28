@@ -31,34 +31,41 @@ const fronendskills: Skill[] = [
 ];
 
 const backendSkills: Skill[] = [
-    { id: 0, name: "TailwindCss", icon: tailwind },
-    { id: 1, name: "NodeJs", icon: node },
-    { id: 2, name: "ExpressJs", icon: ex },
-    { id: 3, name: "C++", icon: cpp },
+    { id: 5, name: "TailwindCss", icon: tailwind },
+    { id: 6, name: "NodeJs", icon: node },
+    { id: 7, name: "ExpressJs", icon: ex },
+    { id: 8, name: "C++", icon: cpp },
 ];
 
 const databases: Skill[] = [
-    { id: 0, name: "MongoDB", icon: mongo },
-    { id: 1, name: "MySql", icon: mysql },
-    { id: 2, name: "Firebase", icon: firebase },
+    { id: 9, name: "MongoDB", icon: mongo },
+    { id: 10, name: "MySql", icon: mysql },
+    { id: 11, name: "Firebase", icon: firebase },
 ];
 
 const advanced: Skill[] = [
-    { id: 0, name: "WebRTC", icon: webrtc },
-    { id: 1, name: "Socket.io", icon: socket },
-    { id: 2, name: "Material ui", icon: mui },
+    { id: 12, name: "WebRTC", icon: webrtc },
+    { id: 13, name: "Socket.io", icon: socket },
+    { id: 14, name: "Material ui", icon: mui },
 ];
 
 const tools: Skill[] = [
-    { id: 0, name: "VsCode", icon: vscode },
-    { id: 1, name: "Postman", icon: postman },
+    { id: 15, name: "VsCode", icon: vscode },
+    { id: 16, name: "Postman", icon: postman },
 ];
 
 const tools_2: Skill[] = [
-    { id: 0, name: "Git", icon: git },
+    { id: 17, name: "Git", icon: git },
 ];
 
-const tools_3: Skill[] = [];
+const allSkills: Skill[] = [
+    ...fronendskills,
+    ...backendSkills,
+    ...databases,
+    ...advanced,
+    ...tools,
+    ...tools_2,
+];
 
 const Techstack: React.FC = () => {
     const renderSkills = (skills: Skill[]) =>
@@ -94,7 +101,7 @@ const Techstack: React.FC = () => {
                 }}
                 className="flex flex-wrap justify-center gap-6 cursor-pointer"
             >
-                <div className="relative ">
+                <div className="relative">
                     <span className="absolute top-0 left-0 mt-[5px] ml-[5px] h-full rounded bg-[grey] w-[110px] sm:w-[150px] md:w-[160px]"></span>
                     <span
                         className={`relative h-full rounded border-t-[1px] border-l-[1px] border-[#374151] bg-[#1e1e2e] px-2 sm:px-4 py-2 sm:py-3 text-sm sm:text-md text-white transition duration-100 flex items-center gap-2 justify-center w-[110px] sm:w-[150px] md:w-[160px] truncate`}
@@ -150,26 +157,28 @@ const Techstack: React.FC = () => {
                     className=" text-3xl md:text-4xl font-bold"
                 >{`/>`}</motion.span>
             </div>
-            <div className="flex justify-center gap-10 mt-10 flex-wrap">
-                {renderSkills(fronendskills)}
+            <div className="hidden md:block">
+                <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                    {renderSkills(fronendskills)}
+                </div>
+                <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                    {renderSkills(backendSkills)}
+                </div>
+                <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                    {renderSkills(databases)}
+                </div>
+                <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                    {renderSkills(advanced)}
+                </div>
+                <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                    {renderSkills(tools)}
+                </div>
+                <div className="flex justify-center gap-10 mt-10 flex-wrap">
+                    {renderSkills(tools_2)}
+                </div>
             </div>
-            <div className="flex justify-center gap-10 mt-10 flex-wrap">
-                {renderSkills(backendSkills)}
-            </div>
-            <div className="flex justify-center gap-10 mt-10 flex-wrap">
-                {renderSkills(databases)}
-            </div>
-            <div className="flex justify-center gap-10 mt-10 flex-wrap">
-                {renderSkills(advanced)}
-            </div>
-            <div className="flex justify-center gap-10 mt-10 flex-wrap">
-                {renderSkills(tools)}
-            </div>
-            <div className="flex justify-center gap-10 mt-10 flex-wrap">
-                {renderSkills(tools_2)}
-            </div>
-            <div className="flex justify-center gap-10 mt-10">
-                {renderSkills(tools_3)}
+            <div className="md:hidden flex justify-center gap-10 mt-10 flex-wrap">
+                {renderSkills(allSkills)}
             </div>
         </div>
     );
