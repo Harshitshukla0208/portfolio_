@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 // import planitio from "../assets/images/Planitio.png";
 import mvk_ui_web from "../assets/images/mvk-ui.png"
 import mvk_ui_npm from "../assets/images/mvk-npm.png"
-import codelogs from "../assets/images/codelogs.png"
+import codelogs from "../assets/images/codelogsimg.png"
 import codeamong from "../assets/images/codeamong.png"
 import { BsGithub, BsArrowRight, BsYoutube } from "react-icons/bs";
 import gsap from "gsap";
